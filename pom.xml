@@ -41,6 +41,7 @@
         -->
         <camunda.compile.version>7.17.0</camunda.compile.version>
         <zeebe.version>8.4.5</zeebe.version>
+        <camunda8.process.test.version>8.6.0-alpha4</camunda8.process.test.version>
         <spring-zeebe.version>8.3.6</spring-zeebe.version>
         <spring-boot.version>2.7.18</spring-boot.version>
 

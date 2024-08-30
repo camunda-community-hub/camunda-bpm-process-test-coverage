@@ -15,10 +15,12 @@
     <modules>
         <module>core</module>
         <module>engine-platform-7</module>
+        <module>engine-platform-zeebe</module>
         <module>engine-platform-8</module>
         <module>junit4-platform-7</module>
         <module>junit5-common</module>
         <module>junit5-platform-7</module>
+        <module>junit5-platform-zeebe</module>
         <module>junit5-platform-8</module>
         <module>spring-test-common</module>
         <module>spring-test-platform-7</module>
@@ -54,6 +56,13 @@
                 <version>${zeebe.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.camunda</groupId>
+                <artifactId>camunda-process-test-java</artifactId>
+                <version>${camunda8.process.test.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
             <!-- Own modules -->
             <dependency>
                 <groupId>org.camunda.community.process_test_coverage</groupId>
@@ -63,6 +72,11 @@
             <dependency>
                 <groupId>org.camunda.community.process_test_coverage</groupId>
                 <artifactId>camunda-process-test-coverage-engine-platform-7</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.camunda.community.process_test_coverage</groupId>
+                <artifactId>camunda-process-test-coverage-engine-platform-zeebe</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
